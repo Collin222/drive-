@@ -1,7 +1,7 @@
 {
 	"name": "Drive++",
 	"description": "Manage your workflow by storing non-compatible links directly to your drive folders.",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"manifest_version": 3,
 	"icons": {
 		"48": "icon.png"
