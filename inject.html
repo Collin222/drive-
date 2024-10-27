@@ -1,0 +1,146 @@
+<div id="drive++">
+	<style>
+		.outer {
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			width: 300px;
+			max-width: 80vw;
+			min-height: 50px;
+			height: fit-content;
+			max-height: 300px;
+			background-color: #fffcfc;
+			border-radius: 20px;
+			z-index: 1000;
+			padding: 20px;
+			box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2px;
+			overflow-y: auto;
+		}
+
+		.outerhidden {
+			display: none;
+		}
+
+		.outershow {
+			display: block;
+		}
+
+		.add {
+			z-index: 1001;
+			position: fixed;
+			bottom: 30px;
+			right: 30px;
+			background-color: #fff;
+			border-radius: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			aspect-ratio: 1 / 1;
+			font-size: 26px;
+			cursor: pointer;
+			box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2px;
+			transition-duration: 0.3s;
+			border: none;
+		}
+
+		.urla {
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			text-decoration: none;
+		}
+
+		.urla:focus {
+			border: none;
+			outline: none;
+		}
+
+		.urla:focus-visible {
+			border: none;
+			outline: none;
+		}
+
+		.add:hover {
+			background-color: #edf1fa;
+			box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px;
+		}
+
+		.add:focus {
+			border: none;
+			outline: none;
+		}
+
+		.add:focus-visible {
+			border: none;
+			outline: none;
+		}
+
+		.urllink {
+			flex-grow: 1;
+			display: flex;
+			gap: 4px;
+			align-items: center;
+			text-decoration: none;
+			color: rgb(60, 64, 67) !important;
+			margin-bottom: 8px;
+		}
+
+		.urllink:hover > img {
+			box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2px;
+		}
+
+		.urllink:hover {
+			color: black;
+			text-decoration: underline;
+		}
+
+		.urllink:focus {
+			border: none;
+			outline: none;
+		}
+
+		.urllink:focus-visible {
+			border: none;
+			outline: none;
+		}
+
+		.urlicon {
+			border-radius: 100%;
+			aspect-ratio: 1 / 1;
+			width: 25px;
+			flex-shrink: 0;
+		}
+
+		.deleteicon {
+			flex-shrink: 0;
+			font-size: 20px;
+		}
+
+		.deleteicon:hover {
+			color: red;
+		}
+
+		.urlouter {
+			display: flex;
+			align-items: center;
+			gap: 4px;
+		}
+
+		.deleteicon {
+			opacity: 0;
+			cursor: pointer;
+		}
+
+		.urlouter:hover > .deleteicon {
+			opacity: 1;
+		}
+
+		.lasturl {
+			padding-right: 40px;
+		}
+	</style>
+
+	<div class="outer"></div>
+	<button class="add">+</button>
+</div>
