@@ -36,8 +36,7 @@ export async function getToken() {
 							console.log('Access token refreshed');
 							resolve(accessToken);
 						} else {
-							const data = await response.json();
-							reject('request failed: ', data);
+							resolve(null);
 						}
 					} else {
 						resolve(accessToken);
